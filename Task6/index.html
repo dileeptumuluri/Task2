@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Date Mini Projects</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        h1 {
+            color: darkblue;
+        }
+
+        pre {
+            background: black;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 16px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>JavaScript Date Mini Projects</h1>
+
+    <h2>Output:</h2>
+
+    <pre id="output"></pre>
+
+
+    <script>
+
+        // Capture Console Output
+
+        let output = document.getElementById("output");
+
+
+        let oldConsoleLog = console.log;
+
+
+        console.log = function(message) {
+
+            output.innerHTML += message + "\n";
+
+            oldConsoleLog(message);
+
+        };
+
+
+    </script>
+
+
+    <!-- JavaScript File Link -->
+
+    <script src="script.js"></script>
+
+
+</body>
+</html>
